@@ -1,0 +1,40 @@
+~~~~~~~~~~~~ HOW TO INSTALL ~~~~~~~~~~~~
+GlowSkin rEfit Theme by Bryan Tragle
+Jul 8th, 2011
+
+(I apologize in advance for my English)
+
+In order to use this theme, you must be using the rEFIt bootloader (http://refit.sourceforge.net/).
+
+The different steps of the installation must all be done in the /efi/refit directory of your hard drive (in the "refit" folder, which is in the "efi" folder located at the root of your hard drive).
+
+WARNING ! DO NOT REPLACE DIRECTLY THE EXISTING "refit" FOLDER BY THIS ONE !
+
+Feel free to back up your old "refit" folder if you are afraid to make a mistake in the installation.
+
+The following steps will allow you to replace entirely your previous rEFIt skin by the one provided in this archive. If you only want to apply partial modifications, do not forget to change the steps to follow accordingly.
+
+Here are the different steps of the installation :
+
+1) Replace the existing "icons" folder (or its content) by the one provided in this archive.
+
+2) Copy the "selection_small.bmp" and "selection_big.bmp" files directly in the "refit" directory. If there already are pictures with such a name in the directory, replace them.
+
+3) Do the same thing with the "hostname.bmp" picture.
+
+4) With a text editor (such as the freebies Vim, TextWrangler, Kod...), open the "refit.conf" file. Look for a line starting with "banner" (with no '#' at the beginning of the line). Modify it, or if no such line does exist, add one, so that you eventually get this line in the file :
+		banner hostname.bmp
+		(There must be only ONE line starting with "banner" in this file !)
+
+5) Like in Step 4, look for a line starting with "selection_big" and for another starting with "selection_small". Edit them, or add them if they do not exist, so that you eventually get those two lines in the refit.conf file :
+        selection_big   selection_big.bmp
+        selection_small selection_small.bmp
+		(Same as before, there must be only ONE line starting with selection_big and only ONE starting with selection_small in the whole file !)
+
+6) Save the changes, and there you go !
+
+The theme change should be effective at your next reboot.
+
+If you have any questions, comments or constructive remarks, feel free to contact me on my DeviantArt profile page : http://bryantragle.deviantart.com/
+
+Enjoy !

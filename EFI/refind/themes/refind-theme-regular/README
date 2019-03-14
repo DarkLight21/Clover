@@ -1,0 +1,18 @@
+
+       1. Download and extract.
+
+       2. Locate `refind` directory under EFI partition. For most Linux based system is commonly `/boot/efi/EFI/refind/`. 
+           Copy theme directory to it.
+
+           Important: Delete older installed versions of this theme before you proceed any further.
+
+       sudo rm -rf /boot/efi/EFI/refind/{regular-theme,refind-theme-regular}
+       sudo cp -r refind-theme-regular /boot/efi/EFI/refind/
+         
+    3. To adjust icon size and font size edit theme.conf
+.
+       sudo nano /boot/efi/EFI/refind/refind-theme-regular/theme.conf
+
+    4. To enable the theme add include refind-theme-regular/theme.conf at the end of refind.conf.
+
+       sudo nano /boot/efi/EFI/refind/refind.conf

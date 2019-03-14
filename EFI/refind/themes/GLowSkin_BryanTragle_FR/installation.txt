@@ -1,0 +1,35 @@
+~~~~~~~~~~~~ INSTRUCTIONS D'INSTALLATION ~~~~~~~~~~~~
+GlowSkin rEfit Theme par Bryan Tragle
+8 Juillet 2011
+
+Pour utiliser ce skin, vous devez bien évidemment utiliser le bootloader rEFIt (http://refit.sourceforge.net/).
+
+Toutes les modifications devront être appliquées dans le dossier "refit" situé dans le dossier "efi", lui-même situé à la racine de votre disque dur. 
+
+Le chemin est donc : /efi/refit
+
+ATTENTION ! NE COPIEZ PAS DIRECTEMENT CE DOSSIER À LA PLACE DU DOSSIER "refit" EXISTANT !
+
+N'HÉSITEZ PAS À EFFECTUER UNE SAUVEGARDE DE CE DOSSIER SI VOUS AVEZ PEUR DE FAIRE UNE FAUSSE MANIPULATION !
+
+Les étapes décrites ici remplacent votre thème rEFIt dans son intégralité. Si vous ne souhaitez apporter que des modifications partielles, veuillez adapter votre démarche en conséquence.
+
+Voici les étapes à suivre :
+
+1) Remplacez le dossier "icons" existant par le dossier "icons" de cette archive.
+
+2) Ajoutez les fichiers "selection_small.bmp" et "selection_big.bmp" directement dans le dossier "refit", c'est-à-dire dans ce qui doit être votre répertoire courant. Si des fichiers de ce nom existent déjà, remplacez-les par ceux de cette archive.
+
+3) Ajoutez aussi l'image "hostname.bmp" dans le répertoire "refit". Si une image de ce nom existe déjà, remplacez-la.
+
+4) Avec un éditeur de texte (comme vi, TextWrangler, Kod... Ces trois-là sont gratuits), ouvrez le fichier "refit.conf". Si une ligne commence par "banner", modifiez-la en écrivant ceci : (attention, la ligne ne doit pas commencer par un #)
+         banner hostname.bmp
+   Si aucune ligne ne commence par "banner", ajoutez n'importe où dans le fichier la ligne ci-dessus.
+
+5) Toujours dans le dossier refit.conf, cherchez une ligne commençant par "selection_big" et une ligne commençant par "selection_small" (il ne foit y avoir aucun # devant). Modifiez-les ou, si elles n'existent pas, ajoutez-les dans le fichier, de sorte d'avoir à la fin les deux lignes suivantes :
+        selection_big   selection_big.bmp
+        selection_small selection_small.bmp
+
+6) Et voilà, l'installation est terminée !
+
+Pour toute question, commentaire ou remarque constructive, n'hésitez pas à me contacter via ma page DeviantArt : http://bryantragle.deviantart.com/

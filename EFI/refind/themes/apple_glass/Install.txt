@@ -1,0 +1,13 @@
+---------------------------------------------------
+BACKUP YOUR ENTIRE REFIND SETUP *BEFORE* PROCEDING!
+---------------------------------------------------
+
+Made on and for my Macbook Pro 13" non-retina.
+
+1) Copy appleglass.png, bigsel.png, smlsel.png and 
+refind.conf to the main folder of rEFInd.
+
+2) Copy os_mac.png, os_linix.png, os_win.png to the
+"Icons" folder of rEFInd.
+
+3) Reboot.
